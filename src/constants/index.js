@@ -63,6 +63,6 @@ export const SERVICES = [
 
 export const CONTACT = {
   address: "derrière power fitness, citée 20 août 1955 en Face O.P.J.I, 23004. ",
-  phoneNo: "+213 551 86 10 59 ",
+  phoneNo: "+213 551 86 18 59 ",
   email: "djabinfopro@gmail.com",
 };
