@@ -17,27 +17,9 @@ export const ABOUT_TEXT = `Je suis un professionnel dévoué et polyvalent avec 
 export const SERVICES = [
   {
     title: "Impression couleur",
-    image: service1,
+    icon: service1,
     description: "Impression couleur pour vos documents professionnels et personnels.",
     technologies: ["Imprimantes couleur", "Papier de qualité"],
-  },
-  {
-    title: "Impression noir et blanc",
-    image: service2,
-    description: "Impression noir et blanc rapide et économique.",
-    technologies: ["Imprimantes noir et blanc", "Papier standard"],
-  },
-  {
-    title: "Photocopie (recto/verso)",
-    image: service3,
-    description: "Service de photocopie en recto ou verso pour vos besoins.",
-    technologies: ["Photocopieuses modernes"],
-  },
-  {
-    title: "Scan image en PDF",
-    image: service4,
-    description: "Scannez vos documents et images en format PDF.",
-    technologies: ["Scanner haute résolution"],
   },
   {
     title: "Réparation imprimantes et PC",
