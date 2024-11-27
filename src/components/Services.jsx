@@ -10,24 +10,34 @@ const Services = () => {
   const serviceRefs = useRef([]);
 
   useEffect(() => {
-    serviceRefs.current.forEach((el, index) => {
-      gsap.fromTo(
+    const elements = serviceRefs.current; // Avoid recalculating references.
+    const animations = [];
+  
+    // Batch animations with reduced calculations per frame.
+    elements.forEach((el) => {
+      const animation = gsap.fromTo(
         el,
         { opacity: 0, y: 50 },
         {
           opacity: 1,
           y: 0,
-          duration: 1,
-          ease: 'power3.out',
+          duration: 0.8, // Slightly shorter duration for snappier effects.
+          ease: 'power2.out', // A less resource-intensive ease function.
           scrollTrigger: {
             trigger: el,
-            start: 'top 80%',
-            toggleActions: 'play none none none',
+            start: 'top 85%', // Trigger slightly earlier to improve perceived smoothness.
+            toggleActions: 'play none none reverse',
           },
         }
       );
+      animations.push(animation);
     });
+  
+    return () => {
+      animations.forEach((animation) => animation.kill()); // Cleanup animations on component unmount.
+    };
   }, []);
+  
 
   return (
     <div className="border-b border-neutral-800 pb-4">
@@ -46,7 +56,7 @@ const Services = () => {
                 height={150}
                 width={150}
                 alt={service.title}
-                
+                loading="lazy"
                 className="mb-6 rounded"
               />
             </div>

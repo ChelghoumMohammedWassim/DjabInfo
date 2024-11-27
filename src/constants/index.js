@@ -8,6 +8,7 @@ import service7 from "../assets/services/service-7.jpg";
 import service8 from "../assets/services/service-8.jpg";
 import service9 from "../assets/services/service-9.jpg";
 import service10 from "../assets/services/service-10.jpg";
+import { image } from "motion/react-client";
 
 export const HERO_CONTENT = `Chez Djab Info, nous offrons des solutions informatiques et digitales adaptées à vos besoins : impression, réparation d’équipements, scan de documents, installation de logiciels et design graphique. Nous concevons des CV professionnels, des panneaux publicitaires et des façades personnalisées. Notre priorité est de fournir des services innovants et de qualité, en alliant expertise technique et satisfaction client.`;
 
@@ -17,7 +18,7 @@ export const ABOUT_TEXT = `Je suis un professionnel dévoué et polyvalent avec 
 export const SERVICES = [
   {
     title: "Impression couleur",
-    icon: service1,
+    image: service2,
     description: "Impression couleur pour vos documents professionnels et personnels.",
     technologies: ["Imprimantes couleur", "Papier de qualité"],
   },

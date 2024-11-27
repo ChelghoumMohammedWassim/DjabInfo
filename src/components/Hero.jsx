@@ -40,7 +40,7 @@ const Hero = () => {
             <div className='w-full lg:w-1/2 lg:p-8'>
             
                 <div id='profileImage' className='flex justify-center rounded-xl'>
-                    <img src={profilePic} alt='' height={500} width={500} className='rounded-xl'/>
+                    <img src={profilePic} alt='' height={500} width={500}   loading="lazy" className='rounded-xl'/>
                 </div>
 
             </div>

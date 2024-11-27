@@ -30,7 +30,7 @@ const NavBar = () => {
               <FaFacebook />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/djabi-nfo-7aa126335/"
               className="text-neutral-400 transition-all duration-300 hover:text-blue-700 hover:scale-125"
               aria-label="LinkedIn"
             >
@@ -44,7 +44,7 @@ const NavBar = () => {
               <FaTwitterSquare />
             </a>
             <a
-              href="#"
+              href="https://github.com/ChelghoumMohammedWassim"
               className="text-neutral-400 transition-all duration-300 hover:text-gray-800 hover:scale-125"
               aria-label="GitHub"
             >
